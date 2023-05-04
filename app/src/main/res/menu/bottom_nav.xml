@@ -6,6 +6,7 @@
         android:id="@+id/map"
         android:icon="@drawable/location"
         android:title="Map"
+
         />
     <item
         android:id="@+id/home"
@@ -18,5 +19,7 @@
         android:id="@+id/profile"
         android:icon="@drawable/person"
         android:title="Profile"
+
         />
+
 </menu>
