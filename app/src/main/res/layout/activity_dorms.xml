@@ -12,7 +12,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="7dp"
         android:background="@drawable/top_background"
         tools:context=".Dorms">
 
@@ -59,6 +58,7 @@
             android:background="@color/white"
             app:menu="@menu/bottom_nav"
             tools:ignore="MissingConstraints"
+            android:layout_marginBottom="0dp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="659dp" />
 

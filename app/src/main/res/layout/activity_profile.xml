@@ -33,15 +33,7 @@
             android:textStyle="bold"
             tools:ignore="HardcodedText,MissingConstraints" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="465dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/white_bakground"
-            android:orientation="vertical">
-            <!--   name -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,9 +45,11 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:text="Name"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    tools:ignore="ExtraText" />
+                    android:textSize="17sp"
+                  android:textColor="@color/white"
+                    tools:ignore="ExtraText"
+                    />
+
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -66,6 +60,11 @@
                     app:srcCompat="@drawable/edit" />
 
             </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/white_greyish" />
+
             <!--pass-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,8 +78,9 @@
                     android:layout_margin="20dp"
                     android:layout_weight="1"
                     android:text="Password"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                   />
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -90,6 +90,10 @@
                     app:srcCompat="@drawable/edit"
                     android:layout_margin="20dp"/>
             </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/white_greyish" />
             <!-- Email-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -103,8 +107,8 @@
                     android:layout_margin="20dp"
                     android:layout_weight="1"
                     android:text="Email"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textSize="17sp"
+                    android:textColor="@color/white"/>
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -114,6 +118,10 @@
                     android:layout_weight="1"
                     app:srcCompat="@drawable/edit" />
             </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/white_greyish" />
             <!--  Locatin-->
 
             <LinearLayout
@@ -128,8 +136,8 @@
                     android:layout_margin="20dp"
                     android:layout_weight="1"
                     android:text="Location"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textSize="17sp"
+                    android:textColor="@color/white" />
 
                 <ImageView
                     android:id="@+id/imageView88"
@@ -141,13 +149,14 @@
 
             </LinearLayout>
 
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="303dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="70dp"
-                android:background="@drawable/circel_button"
+                android:background="@drawable/loginbutton_selector"
                 android:shadowRadius="@android:integer/config_longAnimTime"
                 android:text="Save Change" />
 
@@ -157,13 +166,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/circel_button"
+                android:background="@drawable/loginbutton_selector"
                 android:shadowRadius="@android:integer/config_longAnimTime"
                 android:text="Logout"
                 android:onClick="btnlogout"
                 tools:ignore="DuplicateIds" />
         </LinearLayout>
 
-    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

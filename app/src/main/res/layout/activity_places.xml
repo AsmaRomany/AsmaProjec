@@ -13,7 +13,33 @@
         android:layout_marginStart="0dp"
         android:textSize="40dp"
         android:text="Title"/>
-    <SearchView android:id="@+id/search" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/search" android:layout_below="@+id/title" android:text="search"/>
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حولينا"
+            android:textColor="@color/white"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:background="@drawable/search"
+            android:text="search"
+            />
+
+    </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/dry"/>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
